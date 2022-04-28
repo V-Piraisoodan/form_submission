@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form Submimssion</title>
+    <link rel="icon" href="favicon.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- input fields -->
+        <div class="inputfield">
+            <div class="firstname" id="textfields"><b>First Name</b></div>
+            <input type="text" class="ipf" id="firstip" placeholder="Enter Your First Name Here"/>
+             
+            <div class="lastname" id="textfields"><b>Last Name</b></div>
+            <input type="text" class="ipf" id="lastip" placeholder="Enter Your Last Name Here"/>
+       
+            <div class="address" id="textfields"><b>Address</b></div>
+            <input type="text" class="ipf" id="addressip" placeholder="Enter Your Address Here"/>
+       
+            <div class="pincode" id="textfields"><b>Pincode</b></div>
+            <input type="number" class="ipf" id="pincodeip" placeholder="Enter Your Pincode Here"/>
+       
+            <!-- Gender radio  -->
+            <div>
+                <div class="gender" id="textfields1"><b>Gender</b></div>
+                <div id="checkgen" name="checkgender">
+                   <div>
+                       <input value="Male" type="radio" name="gender" id="gen"/>
+                       <label class="gen-val">Male</label>
+                   </div>   
+                    <div>
+                      <input value="Female" type="radio" name="gender" id="gen"/>
+                      <label class="gen-val">Female</label>
+                    </div> 
+                    <div>
+                     <input value="Others" type="radio" name="gender" id="gen"/>
+                     <label class="gen-val">Others</label>
+                    </div>
+                </div> 
+            </div>
+             
+       
+            <!-- Food items -->
+            <div>
+              <div class="items" id="textfields2"><b>Choose food items</b></div>
+                <div id="checkfoo">
+                    <div>
+                      <input type="checkbox" value="Idly" name="food" id="food"/>
+                      <label id="food-items">Idly</label>
+                    </div>
+                    <div>
+                     <input type="checkbox" value="Poori" name="food" id="food"/>
+                     <label id="food-items">Poori</label>
+                    </div>
+                    <div>
+                     <input type="checkbox" value="Pongal" name="food" id="food"/>
+                     <label id="food-items">Pongal</label>
+                    </div>
+                    <div>
+                     <input type="checkbox" value="Biriyani" name="food" id="food"/>
+                     <label id="food-items">Biriyani</label>
+                    </div>
+                    <div>
+                     <input type="checkbox" value="Barotta" name="food" id="food"/>
+                     <label id="food-items">Barotta</label>
+                    </div>
+                </div>
+            </div>
+       
+            <div class="state" id="state"><b>State</b></div>
+            <input type="text" class="ipf" id="stateip" placeholder="Enter Your State Here"/>
+       
+            <div class="country" id="country"><b>Country</b></div>
+            <input type="text" class="ipf" id="countryip" placeholder="Enter Your Country Here"/>
+       
+            <div class="btn">
+                <button id="button">Submit Here</button>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="outputfield">
+            <table id="table">
+        
+               <thead class="tablehead">
+                    <tr class="t-row">
+                      <th id="tablehead1">First Name</th>
+                      <th id="tablehead2">Last Name</th>
+                      <th id="tablehead3">Address</th>
+                      <th id="tablehead4">Pincode</th>
+                      <th id="tablehead5">Gender</th>
+                      <th id="tablehead6">Food Items</th>
+                      <th id="tablehead7">State</th>
+                      <th id="tablehead8">Country</th>
+                    </tr>
+                </thead>
+
+            </table>
+
+        </div>
+
+
+    </div>
+
+
+ <script src="script.js"></script>
+
+</body>
+</html>

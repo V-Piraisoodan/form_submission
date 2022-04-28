@@ -1,0 +1,543 @@
+*{
+    margin :0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none; 
+    /* what is outline */
+}
+/* line 6 : what is outline */
+body{
+    background-image: url("HD11.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;    
+    margin: 5px 5px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    background-image:linear-gradient(rgba(243, 215, 164, 0.452) ,rgba(124, 126, 241, 0.753) );
+    flex-direction: row;
+    gap: 15px;
+    margin: 5px 0px 5px 0px;
+    object-fit: contain;
+}
+
+/* input field styling */
+
+.inputfield{
+
+    background-image:linear-gradient(rgba(188, 155, 241, 0.61) ,rgba(228, 247, 239, 0.753) );
+    box-shadow: 
+             5px 5px 12px rgba(168, 226, 248, 0.719);
+    border: 1px solid rgb(104, 3, 95);
+    border-radius: 10px;
+    width: 30%;
+    margin-left: 10px;
+}
+
+/* input text styling */
+
+.firstname,.lastname,.address,.pincode,.gender,.items,.state,.country{
+    font-size: 22px;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+
+/* input box styling */
+
+.ipf{
+    border: 1.5px solid rgb(113, 89, 245);
+    padding-left: 15px;
+    margin: 3px 23px 0px 23px;
+    height: 36px;
+    width: 340px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    transition: 0.5s;
+}
+
+/* input box focus styling */
+
+.ipf:focus{
+    box-shadow: 0 0 8px 0 rgb(27, 6, 146);
+}
+
+/* gender and food selection box styling */
+
+#checkgen,#checkfoo{
+    display: flex;
+    margin-left: 25px;
+    margin-top: 8px;
+}
+
+/* gender radio selection styling */
+
+#gen{
+    margin: 0px 3px 0px 10px;
+    height: 18px;
+    width: 18px;
+}
+
+/* gender value styling */
+
+.gen-val{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* food chechbox styling */
+
+#food{
+    margin-left: 12px;
+    height: 18px;
+    width: 18px;
+}
+
+/* food varieties styling */
+
+#food-items{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-left : 11px;
+}
+
+
+/* button styling */
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+#button{
+
+    color:rgb(255, 255, 255);
+    background-color: rgba(7, 14, 105, 0.973);
+    height: 50px;
+    width: 280px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 35px 0px 35px 0px;
+}
+
+/* button hover styling */
+
+#button:hover{
+    box-shadow: 0 0 10px rgba(70, 21, 32, 0.911);
+}
+
+/* button avtive styling */
+
+#button:active{
+    color:rgb(255, 255, 255);
+    background-color: rgba(12, 24, 189, 0.897);
+    transform: translateY(1px);
+}
+
+/* table styling */
+
+.outputfield{
+    border: 1px solid rgb(104, 3, 95);
+    width: 85%;
+    border-radius: 10px;
+    max-height: 780px;
+    overflow-y: scroll;
+}
+
+/* table */
+#table{
+    width: 99%;
+    border-collapse: collapse;
+    font-size: 20px;
+    margin: 5px;
+    table-layout: fixed;
+}
+
+/* table row */
+.t-row{
+    background-color: rgb(2, 131, 13);
+    color: cornsilk;
+    text-align: left;
+    font-weight: bold;  
+}
+
+/* table head */
+th{
+    border-right: 1px solid ;
+    padding: 13px 5px;
+}
+
+/* table data */
+td{
+    padding: 5px 6px;
+    overflow:auto;
+    height: 50px;
+    word-break: break-word;
+    border-bottom: 1px solid rgb(219, 12, 247);
+    background-color: rgba(186, 184, 194, 0.247);
+}
+
+@media only screen and (min-width: 320px) {
+    body{
+        background-image: url("HD11.jpg");
+        background-size: 100% 80%;
+        background-repeat: no-repeat;    
+        margin: 1px 1px;
+    }
+    .container{
+        flex-direction: column;
+        background-image: none;
+    }
+    .inputfield{
+        width: 100%;
+        margin: 1px ;
+    }
+    .firstname,.lastname,.address,.pincode,.gender,.items,.state,.country{
+        font-size: 15px;
+        margin-left: 15px;
+        padding-top: 11px;
+    }
+    .ipf{ 
+        height: 30px;
+        width: 250px;
+        font-size: 13px;
+    }
+    #checkgen,#checkfoo{
+        margin-left: 10px;
+    }
+    #gen{
+        margin: 0px 3px 0px 8px;
+        height: 13px;
+        width: 13px;
+    }
+    .gen-val{
+        font-size: 15px;
+    }
+    #food{
+        margin-left: 10px;
+        height: 13px;
+        width: 13px;
+    }
+    #food-items{
+        font-size: 15px;
+        padding-left : 5px;
+    }
+    #button{
+        height: 40px;
+        width: 200px;
+        font-size: 17px;
+    }
+    .outputfield{
+        width: 200%;
+        border-radius: 10px;
+        max-height: 780px;
+        overflow-y: scroll;
+    }
+    #table{
+        font-size: 15px;
+        margin: 5px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) { 
+    .firstname,.lastname,.address,.pincode,.gender,.items,.state,.country{
+        font-size: 18px;
+        margin-left: 25px;
+        padding-top: 11px;
+    }
+    .ipf{ 
+        width: 550px;
+        font-size: 15px;
+    }
+    #checkgen,#checkfoo{
+        margin-left: 25px;
+    }
+} 
+
+@media only screen and (min-width: 1024px) {
+    body{
+        background-image: url("HD11.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;    
+        margin: 5px 5px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        background-image:linear-gradient(rgba(243, 215, 164, 0.452) ,rgba(124, 126, 241, 0.753) );
+        flex-direction: row;
+        gap: 15px;
+        margin: 5px 0px 5px 0px;
+        object-fit: contain;
+    }
+    .inputfield{
+
+        background-image:linear-gradient(rgba(188, 155, 241, 0.61) ,rgba(228, 247, 239, 0.753) );
+        box-shadow: 
+                 5px 5px 12px rgba(168, 226, 248, 0.719);
+        border: 1px solid rgb(104, 3, 95);
+        border-radius: 10px;
+        width: 32%;
+        margin-left: 10px;
+    }
+    .firstname,.lastname,.address,.pincode,.gender,.items,.state,.country{
+        font-size: 18px;
+        margin-left: 20px;
+        padding-top: 15px;
+    }
+    .ipf{
+        border: 1.5px solid rgb(113, 89, 245);
+        padding-left: 15px;
+        margin: 3px 23px 0px 23px;
+        height: 36px;
+        width: 280px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    #checkgen,#checkfoo{
+        display: flex;
+        margin-left: 13px;
+        margin-top: 8px;
+    }
+    #gen{
+        margin: 0px 3px 0px 10px;
+        height: 18px;
+        width: 18px;
+    }
+    .gen-val{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+    #food{
+        margin-left: 12px;
+        height: 18px;
+        width: 18px;
+    } 
+    #food-items{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        padding-left : 11px;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+    }  
+    #button{
+    
+        color:rgb(255, 255, 255);
+        background-color: rgba(7, 14, 105, 0.973);
+        height: 50px;
+        width: 280px;
+        font-size: 18px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        margin: 35px 0px 35px 0px;
+    }
+    .outputfield{
+        border: 1px solid rgb(104, 3, 95);
+        width: 85%;
+        border-radius: 10px;
+        max-height: 780px;
+        overflow-y: scroll;
+    }
+    #table{
+        width: 99%;
+        border-collapse: collapse;
+        font-size: 18px;
+        margin: 5px;
+        table-layout: fixed;
+    }
+    .t-row{
+        background-color: rgb(2, 131, 13);
+        color: cornsilk;
+        text-align: left;
+        font-weight: bold;  
+    }
+    th{
+        border-right: 1px solid ;
+        padding: 13px 5px;
+    }
+    td{
+        padding: 5px 6px;
+        overflow:auto;
+        height: 50px;
+        word-break: break-word;
+        border-bottom: 1px solid rgb(219, 12, 247);
+        background-color: rgba(186, 184, 194, 0.247);
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body{
+        background-image: url("HD11.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;    
+        margin: 5px 5px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        background-image:linear-gradient(rgba(243, 215, 164, 0.452) ,rgba(124, 126, 241, 0.753) );
+        flex-direction: row;
+        gap: 15px;
+        margin: 5px 0px 5px 0px;
+        object-fit: contain;
+    }
+    .inputfield{
+
+        background-image:linear-gradient(rgba(188, 155, 241, 0.61) ,rgba(228, 247, 239, 0.753) );
+        box-shadow: 
+                 5px 5px 12px rgba(168, 226, 248, 0.719);
+        border: 1px solid rgb(104, 3, 95);
+        border-radius: 10px;
+        width: 30%;
+        margin-left: 10px;
+    }
+    .firstname,.lastname,.address,.pincode,.gender,.items,.state,.country{
+        font-size: 22px;
+        margin-left: 20px;
+        padding-top: 15px;
+    }
+    .ipf{
+        border: 1.5px solid rgb(113, 89, 245);
+        padding-left: 15px;
+        margin: 3px 23px 0px 23px;
+        height: 36px;
+        width: 340px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        transition: 0.5s;
+    }
+    .ipf:focus{
+        box-shadow: 0 0 8px 0 rgb(27, 6, 146);
+    } 
+    #checkgen,#checkfoo{
+        display: flex;
+        margin-left: 25px;
+        margin-top: 8px;
+    }
+    #gen{
+        margin: 0px 3px 0px 10px;
+        height: 18px;
+        width: 18px;
+    }
+    .gen-val{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+    }
+    #food{
+        margin-left: 12px;
+        height: 18px;
+        width: 18px;
+    } 
+    #food-items{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        padding-left : 11px;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+    }  
+    #button{
+    
+        color:rgb(255, 255, 255);
+        background-color: rgba(7, 14, 105, 0.973);
+        height: 50px;
+        width: 280px;
+        font-size: 20px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        margin: 35px 0px 35px 0px;
+    }
+    #button:hover{
+        box-shadow: 0 0 10px rgba(70, 21, 32, 0.911);
+    }
+    #button:active{
+        color:rgb(255, 255, 255);
+        background-color: rgba(12, 24, 189, 0.897);
+        transform: translateY(1px);
+    }
+    .outputfield{
+        border: 1px solid rgb(104, 3, 95);
+        width: 85%;
+        border-radius: 10px;
+        max-height: 780px;
+        overflow-y: scroll;
+    }
+    #table{
+        width: 99%;
+        border-collapse: collapse;
+        font-size: 20px;
+        margin: 5px;
+        table-layout: fixed;
+    }
+    .t-row{
+        background-color: rgb(2, 131, 13);
+        color: cornsilk;
+        text-align: left;
+        font-weight: bold;  
+    }
+    th{
+        border-right: 1px solid ;
+        padding: 13px 5px;
+    }
+    td{
+        padding: 5px 6px;
+        overflow:auto;
+        height: 50px;
+        word-break: break-word;
+        border-bottom: 1px solid rgb(219, 12, 247);
+        background-color: rgba(186, 184, 194, 0.247);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
